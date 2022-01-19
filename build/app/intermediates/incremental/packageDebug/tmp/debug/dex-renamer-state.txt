@@ -1,0 +1,4 @@
+#Thu Jan 20 00:00:23 KST 2022
+base.0=/mnt/d/coding/mic-counter/medicine_recommender/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
