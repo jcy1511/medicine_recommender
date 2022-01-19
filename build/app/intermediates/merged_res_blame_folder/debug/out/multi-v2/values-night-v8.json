@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/mnt/d/coding/mic-counter/medicine_recommender/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "/mnt/d/coding/Projects/medic/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/mnt/d/coding/mic-counter/medicine_recommender/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/mnt/d/coding/Projects/medic/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

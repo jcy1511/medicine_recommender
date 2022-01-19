@@ -43,10 +43,6 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   static List<Widget> _widgetOptions = <Widget>[
     home(),
     search(),
-    Text(
-      '설정창',
-      style: optionStyle,
-    ),
   ];
 
   void _onItemTapped(int index) {
@@ -71,16 +67,14 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
+            icon: Icon(
+              Icons.local_hospital,
+            ),
+            label: '부상',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.search),
-            label: 'Search',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
-            label: 'Settings',
+            icon: Icon(Icons.coronavirus_rounded),
+            label: '질병',
           ),
         ],
         currentIndex: _selectedIndex,

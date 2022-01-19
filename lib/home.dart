@@ -22,12 +22,12 @@ class home extends StatelessWidget {
               Card(
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20),
-                      side: BorderSide(color: Colors.blue)),
+                      side: BorderSide(color: Colors.green)),
                   child: Material(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20),
-                        side: BorderSide(color: Colors.blue)),
-                    color: Colors.blue[50],
+                        side: BorderSide(color: Colors.green)),
+                    color: Colors.green[50],
                     child: InkWell(
                         customBorder: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20),
@@ -41,7 +41,7 @@ class home extends StatelessWidget {
                         },
                         child: Center(
                             child: Text(
-                          '종류1',
+                          '찰과상',
                           style: TextStyle(
                               fontSize: 20, fontWeight: FontWeight.bold),
                         ))),
@@ -49,12 +49,12 @@ class home extends StatelessWidget {
               Card(
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20),
-                      side: BorderSide(color: Colors.blue)),
+                      side: BorderSide(color: Colors.green)),
                   child: Material(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20),
-                        side: BorderSide(color: Colors.blue)),
-                    color: Colors.blue[50],
+                        side: BorderSide(color: Colors.green)),
+                    color: Colors.green[50],
                     child: InkWell(
                         customBorder: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20),
@@ -77,12 +77,12 @@ class home extends StatelessWidget {
               Card(
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20),
-                      side: BorderSide(color: Colors.blue)),
+                      side: BorderSide(color: Colors.green)),
                   child: Material(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20),
-                        side: BorderSide(color: Colors.blue)),
-                    color: Colors.blue[50],
+                        side: BorderSide(color: Colors.green)),
+                    color: Colors.green[50],
                     child: InkWell(
                         customBorder: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20),
@@ -104,12 +104,12 @@ class home extends StatelessWidget {
               Card(
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20),
-                      side: BorderSide(color: Colors.blue)),
+                      side: BorderSide(color: Colors.green)),
                   child: Material(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20),
-                        side: BorderSide(color: Colors.blue)),
-                    color: Colors.blue[50],
+                        side: BorderSide(color: Colors.green)),
+                    color: Colors.green[50],
                     child: InkWell(
                         customBorder: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20),
