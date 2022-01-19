@@ -10,7 +10,7 @@ class povidin extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.white,
         title: Text(
-          '포비딘요오드',
+          '포비돈요오드',
           style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
         ),
         leading: IconButton(
@@ -28,7 +28,7 @@ class povidin extends StatelessWidget {
               children: [
                 SizedBox(height: 20),
                 Text(
-                  ' 포비딘요오드',
+                  ' 포비돈요오드',
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
                 SizedBox(
@@ -70,7 +70,7 @@ class povidin2 extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.white,
           title: Text(
-            '포비딘요오드',
+            '포비돈요오드',
             style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
           ),
           leading: IconButton(
@@ -108,7 +108,7 @@ class povidin2 extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      '포비딘요오드',
+                      '포비돈요오드',
                       style:
                           TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                     ),
