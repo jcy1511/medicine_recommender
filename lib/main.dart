@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
           background: Container(color: Color(0xFFF5F5F5))),
       title: _title,
       home: MyStatefulWidget(),
-      theme: ThemeData(primarySwatch: Colors.blue),
+      theme: ThemeData(primarySwatch: Colors.green),
     );
   }
 }

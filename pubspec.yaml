@@ -1,5 +1,5 @@
 name: medicine_recommender
-description: A new Flutter project.
+description: 약을 추천해드립니다.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   responsive_framework: ^0.1.5
   sliding_up_panel: ^2.0.0+1
+  animations: ^2.0.2
 
 dev_dependencies:
   flutter_test:

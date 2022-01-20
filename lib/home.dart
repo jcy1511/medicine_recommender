@@ -1,25 +1,29 @@
 import 'package:flutter/material.dart';
-import 'homes.dart';
+import 'abrasion.dart';
 
 class home extends StatelessWidget {
-  const home({Key? key}) : super(key: key);
-
+  home({Key? key}) : super(key: key);
+  final List types = ['찰과상', '타박상', '종류3', '종류4'];
+  final List images = [];
+  final List views = [];
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      scrollDirection: Axis.vertical,
-      child: Wrap(
-        children: [
-          GridView.count(
+    return Column(
+      children: [
+        Expanded(
+          child: ListView.separated(
+            itemCount: types.length,
             scrollDirection: Axis.vertical,
             shrinkWrap: true,
             primary: false,
             padding: const EdgeInsets.all(20),
-            crossAxisSpacing: 10,
-            mainAxisSpacing: 10,
-            crossAxisCount: 2,
-            children: <Widget>[
-              Card(
+            separatorBuilder: (context, index) => Divider(
+              height: 10,
+              color: Colors.transparent,
+            ),
+            itemBuilder: (context, index) => Container(
+              height: 200,
+              child: Card(
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20),
                       side: BorderSide(color: Colors.green)),
@@ -33,105 +37,22 @@ class home extends StatelessWidget {
                           borderRadius: BorderRadius.circular(20),
                         ),
                         onTap: () {
-                          debugPrint('Tapped');
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => home1()),
+                            MaterialPageRoute(builder: (context) => abrasion()),
                           );
                         },
                         child: Center(
                             child: Text(
-                          '찰과상',
+                          '${types[index]}',
                           style: TextStyle(
                               fontSize: 20, fontWeight: FontWeight.bold),
                         ))),
                   )),
-              Card(
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20),
-                      side: BorderSide(color: Colors.green)),
-                  child: Material(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
-                        side: BorderSide(color: Colors.green)),
-                    color: Colors.green[50],
-                    child: InkWell(
-                        customBorder: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20),
-                        ),
-                        onTap: () {
-                          debugPrint('Tapped');
-
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => home2()),
-                          );
-                        },
-                        child: Center(
-                            child: Text(
-                          '종류2',
-                          style: TextStyle(
-                              fontSize: 20, fontWeight: FontWeight.bold),
-                        ))),
-                  )),
-              Card(
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20),
-                      side: BorderSide(color: Colors.green)),
-                  child: Material(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
-                        side: BorderSide(color: Colors.green)),
-                    color: Colors.green[50],
-                    child: InkWell(
-                        customBorder: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20),
-                        ),
-                        onTap: () {
-                          debugPrint('Tapped');
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => home3()),
-                          );
-                        },
-                        child: Center(
-                            child: Text(
-                          '종류3',
-                          style: TextStyle(
-                              fontSize: 20, fontWeight: FontWeight.bold),
-                        ))),
-                  )),
-              Card(
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20),
-                      side: BorderSide(color: Colors.green)),
-                  child: Material(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
-                        side: BorderSide(color: Colors.green)),
-                    color: Colors.green[50],
-                    child: InkWell(
-                        customBorder: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20),
-                        ),
-                        onTap: () {
-                          debugPrint('Tapped');
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => home4()),
-                          );
-                        },
-                        child: Center(
-                            child: Text(
-                          '종류4',
-                          style: TextStyle(
-                              fontSize: 20, fontWeight: FontWeight.bold),
-                        ))),
-                  )),
-            ],
-          )
-        ],
-      ),
+            ),
+          ),
+        )
+      ],
     );
   }
 }
